@@ -1,16 +1,16 @@
 # Getting Started
-mvn package -Dmaven.test.skip=true
-java -jar demo-0.0.1-SNAPSHOT.jar --spring.batch.job.names=taskletJob --spring.batch.job.enabled=true
-java -jar demo-0.0.1-SNAPSHOT.jar csvfile=person.csv --spring.batch.job.names=chunkJob --spring.batch.job.enabled=true
+    mvn package -Dmaven.test.skip=true
+    java -jar demo-0.0.1-SNAPSHOT.jar --spring.batch.job.names=taskletJob --spring.batch.job.enabled=true
+    java -jar demo-0.0.1-SNAPSHOT.jar csvfile=person.csv --spring.batch.job.names=chunkJob --spring.batch.job.enabled=true
 
 ### listener
-JobExecutionListener
-StepExecutionListener
-ChunkListener
-ItemReadListener
-ItemProcessListener
-ItemWriteListener
-SkipListener
+    JobExecutionListener
+    StepExecutionListener
+    ChunkListener
+    ItemReadListener
+    ItemProcessListener
+    ItemWriteListener
+    SkipListener
 
 ### JPA
 * ddl-auto:create----每次运行该程序，没有表格会新建表格，表内有数据会清空
